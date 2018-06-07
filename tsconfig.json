@@ -1,0 +1,11 @@
+{
+    "files": [
+        "TypeScript/main.ts"
+    ],
+    "compilerOptions": {
+        "removeComments": true,
+        "target": "es2016",
+        "watch": true,
+        "outFile": "JavaScript/mainJava.js"
+    }  
+}

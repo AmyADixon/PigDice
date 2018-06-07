@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Tell microsoft edge
+                                                               how to behave -->
+
+    <meta name= "description" content= "Play pig dice free online without 
+                                        dowload and flash."> <!-- Search info -->
+
+    <link href= "StyleSheets/design.css" rel= "stylesheet">
+    
+
+    <title> Pig Dice </title>
+
+</head>
+
+<body>
+
+     <h1>
+         <img src= "Images/pig.png" style= "width: 5em" alt= "pig image" id= "pig"> 
+         <img src= "Images/dice.png" style= "width: 5em" alt= "dice imgae" id= "dice">
+    </h1>
+
+
+    <div id= "gameBoard">
+
+        <div id= "player1Space">
+
+            <div class= "tooltip">
+
+                <!-- <label> Player 1 </label> -->
+                <img src="Images/nerd.png" style= "width: 2em"
+                 alt="Player 1 image, a nerd emoji">
+
+                 <span class= "tooltipText"> Player 1 </span>
+
+            </div>
+
+            <input type ="text" id= "player1Score" placeholder=" 0" disabled>
+            <span hidden = "hidden" class = "currentPlayer" id = "p1Check"> &check; </span>
+            <br /> <br />
+
+
+        </div> 
+
+        <div id="player2Space">
+
+            <div class= "tooltip">
+                
+                <!-- <label displa> Player 2</label> -->
+                <img src="Images/cool.png" style= "width: 2em"
+                 alt="Player 2 image, a sunglasses emoji">
+
+                 <span class= "tooltipText"> Player 2 </span>
+
+            </div>
+
+            <input type ="text" id= "player2Score" placeholder=" 0" disabled>
+            <span hidden = "hidden" class = "currentPlayer" id = "p2Check"> &check; </span>
+            <br /> <br />
+
+        </div> 
+
+        <div id= "scoreSection">
+
+            <div class= "tooltip">
+                
+                <!-- <label for=""> Current Turn Score </label> -->
+                <img src="Images/scoreSheet.png" style= "width: 2em"
+                 alt="Score image, a paper and pencil emoji">
+
+                 <span class= "tooltipText"> Current Turn Score </span>
+                 
+             </div>
+
+            <input type= "text" id= "turnScore" placeholder=" 0" disabled>
+            <br /> <br />
+
+            <div id = "buttons">
+                <button type= "button" id = "roll"> Roll </button>
+                <button type= "button" id = "pass"> Pass </button>
+            </div>
+
+        </div>
+
+        <div id="diceSpace">
+
+            <!-- <p> Dice Space </p> -->
+            <br />
+            <!-- <output id= "diceValue"> Display Number </output> --> <!-- Not supported in edge/IE -->
+
+            <section id= "output"> </section> 
+
+        </div> 
+
+    </div>
+
+    <section id= "gameRules">
+
+            <h2> Game Rules </h2>
+
+        <p> Starting with player 1, both players will continue to roll for numbers
+            to add to their scores. All numbers may be added to the total score, <strong> but 1 </strong>.
+            If a <strong> 1 </strong> is rolled, then the player who rolled it will both forfeit their 
+            turn and the current points accumulated during the turn (0 will be added to their total).
+            Pass may be utilized to switch players before a <strong> 1 </strong> is rolled, but less
+            points may be collected as a result; it's a gamble. <strong> The first player to accumulate 100 points wins the game. </strong> 
+            <br /> <br/>
+            <strong> Nerd Emoji</strong>: Player 1
+            <br /> <br />
+            <strong> Cool Emoji</strong>: Player 2
+            <br /> <br />
+            <strong> Pencil and Paper </strong>: Current Turn Score
+            <br /> <br />
+            <strong> Roll </strong>: Generates a random number, 1 - 6
+            <br /> <br />
+            <strong> Pass </strong>: Forfeits turn to other player
+            <br /> <br />
+            
+        </p>
+
+    </section>
+
+    <footer> &copy; Amy Dixon 2018 </footer>
+    
+</body>
+
+<script src="JavaScript/mainJava.js" > </script>
+
+</html>

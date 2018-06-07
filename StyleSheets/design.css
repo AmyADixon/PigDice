@@ -1,0 +1,125 @@
+html {
+    background-color: black;
+    text-align: center;
+    padding-top: 3em;
+    padding-left: 12em;
+    padding-right: 12em;
+}
+
+/*#headerImages {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*#headerImages>img{
+    width: 5em;
+    height: auto;
+}*/
+
+div#gameBoard {
+    background-color: whitesmoke;
+    border-radius: 1em;
+    margin-top: -2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+/*div#player1Space, div#player2Space, div#scoreSection {
+    border-radius: 1em;
+}*/
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltipText {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltipText {
+    visibility: visible;
+}
+
+.currentPlayer {
+    color: green;
+    position: absolute;
+    margin-top: 14px;
+}
+
+div#diceSpace {
+    background-color: rgb(173, 146, 88);
+    border-radius: 1em;
+}
+
+section#gameRules {
+    background-color: rgb(161, 87, 17);
+    border-radius: 1em;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+input {
+    /*border: .09em solid rgba(235, 160, 198, 0.432);*/
+    border-radius: 1em;
+    text-align: center;
+    width: 6em;
+    color: rgba(192, 74, 133, 0.781);
+}
+
+/*#buttons {
+    display: flex;
+    justify-content: center;
+}*/
+
+#buttons {
+    margin-bottom: 1em;
+}
+
+#buttons>button[type= button] {
+    border-radius: 1em;
+}
+
+button:enabled:hover {
+    border-color: rgba(192, 74, 133, 0.781);
+    background-color:  rgba(235, 160, 198, 0.616);
+    cursor: pointer;
+}
+
+#diceSpace {
+    padding-bottom: 1em;
+}
+
+#output {
+    font-size: 2em;
+}
+
+footer {
+    color: gray;
+    padding-top: .5em;
+    font-size: .8em;
+}
+
+@media only screen and (max-width: 768px) {
+    #gameBoard {
+        flex-direction: column;
+    }
+
+    /*h1 {
+        display: none;
+    }*/
+
+    .headerImages {
+        width: 3em;
+    }
+}

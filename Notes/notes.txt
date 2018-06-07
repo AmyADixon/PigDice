@@ -1,0 +1,10 @@
+Objective:
+    Create a functional pig dice game for two human players
+    (or one player playing against themselves)
+
+Rules:
+    Players take turns rolling a single dice; players will 
+    accumulate their rolls as long as they don't get a one. 
+    If a one is rolled, then they get 0 points and turn is
+    ended. Turn can be passed over before a one is hit. First
+    player to 100 points wins.

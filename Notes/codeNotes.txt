@@ -1,0 +1,18 @@
+(Ideas to keep in mind)
+
+Data to keep tack of:
+    ~ State of game (new, playing, not started, and finished).
+      because interface might change.
+    ~ Current player turn
+    ~ Turn total during a turn
+    ~ Grand total after turn is over (total + turn total)
+    ~ Grand total for each player
+
+Game Class:
+    ~ Current player
+    ~ Game State
+    ~ Current turn total
+    ~ Grand total for each player
+    * Method called StartGame();
+    * Method called RollDice();
+    * Method called PassTurn();
